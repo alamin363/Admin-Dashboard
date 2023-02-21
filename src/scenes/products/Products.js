@@ -143,7 +143,7 @@ const Products = () => {
             "& > div": { gridColumn: isNonMobile ? undefined : "span 4" },
           }}
         >
-          {Array.from(new Array(20)).map(() => (
+          {[...new Array(20)].map(() => (
             <Loader />
           ))}
         </Box>
