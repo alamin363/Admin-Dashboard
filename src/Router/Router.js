@@ -1,7 +1,9 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Customers from "scenes/Customest/Customers";
 import Dashboard from "scenes/dashboard/dashbord";
+import Geography from "scenes/Geography/Geography";
 import Layout from "scenes/layout/Layout";
+import Overview from "scenes/Overview/Overview";
 import Products from "scenes/products/Products";
 import Transaction from "scenes/Transaction/Transaction";
 
@@ -28,6 +30,14 @@ export const router = createBrowserRouter([
       {
         path: "/transactions",
         element: <Transaction />,
+      },
+      {
+        path: "/geography",
+        element: <Geography />,
+      },
+      {
+        path: "/overview",
+        element: <Overview />,
       },
     ],
   },
