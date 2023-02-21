@@ -3,6 +3,7 @@ import Customers from "scenes/Customest/Customers";
 import Dashboard from "scenes/dashboard/dashbord";
 import Layout from "scenes/layout/Layout";
 import Products from "scenes/products/Products";
+import Transaction from "scenes/Transaction/Transaction";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
       {
         path: "/customers",
         element: <Customers />,
+      },
+      {
+        path: "/transactions",
+        element: <Transaction />,
       },
     ],
   },
