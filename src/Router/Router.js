@@ -1,5 +1,6 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import Customers from "scenes/Customest/Customers";
+import Daily from "scenes/Daily";
 import Dashboard from "scenes/dashboard/dashbord";
 import Geography from "scenes/Geography/Geography";
 import Layout from "scenes/layout/Layout";
@@ -38,6 +39,11 @@ export const router = createBrowserRouter([
       {
         path: "/overview",
         element: <Overview />,
+      },
+  
+      {
+        path: "/daily",
+        element: <Daily />,
       },
     ],
   },
